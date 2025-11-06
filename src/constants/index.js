@@ -151,7 +151,7 @@ const skillDetails = [
   {
     id: 'ai-prototyping',
     title: 'AI 프로토타이핑',
-    description: '초안 기획을 바탕으로 AI 문서 시각화를 통해 빠른 중간 보고 및 피드백과 실배치 진행으로 2일 만에 테스트 가능한 프로토타입을 제작하였습니다.',
+    description: '기획 초안부터 테스트 검증까지 단 2일 만에 수행하며 AI 활용 역량을 강화하였습니다.',
     images: [
       {
         src: level_1,
