@@ -504,10 +504,9 @@ All canvas components follow this structure:
 - Uses `window.matchMedia` for mobile detection
 
 ### Stars.jsx (Background)
-- 1000 random points in sphere (Maath) - reduced from 5000 for performance
+- 5000 random points in sphere (Maath)
 - Continuous rotation via `useFrame`
 - Negative z-index (renders behind content)
-- Adjust particle count in line 9: `random.inSphere(new Float32Array(1000), { radius: 1.2 })`
 
 ## HOC Pattern - SectionWrapper
 
@@ -757,7 +756,6 @@ Final section for personal branding and aspirations:
 3. **Lazy Loading**: Suspense on 3D components
 4. **Asset Preloading**: `<Preload all />` in Canvas
 5. **Geometry Optimization**: Simple shapes (points for stars)
-6. **Particle Count**: Stars.jsx uses 1000 particles (reduced from 5000) for better performance
 
 ## Key Files to Edit
 
@@ -915,60 +913,19 @@ The dev server is configured to use port 3000 by default in `vite.config.js`. If
 - Vite will show an error and suggest using a different port
 - You can override with: `npm run dev -- --port 3001`
 
-## Git Repository
-
-### GitHub Repository
-- **URL**: https://github.com/LoKoon3/KangbyeongMin_Portfolio.git
-- **Main Branch**: `main`
-
-### Git Workflow
-```bash
-# Check status
-git status
-
-# Add changes
-git add .
-git add <specific-file>
-
-# Commit changes
-git commit -m "Description of changes"
-
-# Push to GitHub
-git push
-git push origin main
-```
-
-**Important Notes**:
-- Repository was reinitialized to remove large file history (SoulDive_UnrealEngine_Package.zip: 4GB, 몽중저택.pptm: 1.5GB)
-- Current `.git` folder size: ~67MB (clean history)
-- Always ensure large files (>50MB) are not committed
-
 ## Deployment
 
-### Vercel Deployment via GitHub
-**Recommended Method**: Deploy via GitHub integration (not CLI)
-
-1. **Connect GitHub Repository**:
-   - Vercel Dashboard → Add New Project
-   - Import from GitHub: `KangbyeongMin_Portfolio`
-   - Project Name: `kangbyeongmin_portpolio` (note: intentional spelling)
-
-2. **Build Configuration**:
-   - Framework: Vite
-   - Build Command: `npm run build`
-   - Output Directory: `dist`
-   - Install Command: `npm install`
-
-3. **Environment**:
-   - No environment variables required
-   - All assets are static
-
-**Why GitHub Deployment**:
-- Vercel CLI has 2GB upload limit
-- GitHub integration clones repository without `.git` folder
-- Automatic deployments on push to main branch
-
-**Files in Deployment**:
-- `public/portfolios/`: Portfolio PDFs, Excel files (accessible at `/portfolios/[filename]`)
+### Vercel Deployment
+Files in `public/portfolios/` are deployed as static assets and remain accessible after deployment:
+- Portfolio PDFs, Excel files, and PPTM files
 - All download functionality works in production
-- Total deployment size: ~60MB (excluding node_modules)
+- Users can download files without having access to original source code
+
+**Build Configuration**:
+- Framework: Vite
+- Build Command: `npm run build`
+- Output Directory: `dist`
+- Install Command: `npm install`
+
+**File Download Mechanism**:
+All downloadable files are served from `/portfolios/` path and work identically in both development and production environments.
