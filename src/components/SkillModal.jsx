@@ -323,15 +323,7 @@ const SkillModal = ({ skill, isOpen, onClose }) => {
                     </>
                   )}
 
-                  {/* 파일이 없을 때 */}
-                  {(!skill.portfolioFiles || skill.portfolioFiles.length === 0) && (
-                    <>
-                      <div className="w-full h-[1px] bg-secondary opacity-30 my-6"></div>
-                      <p className="text-secondary text-center py-4">
-                        포트폴리오 파일이 준비 중입니다.
-                      </p>
-                    </>
-                  )}
+                  
                 </Dialog.Panel>
               </Transition.Child>
             </div>
