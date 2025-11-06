@@ -36,7 +36,6 @@ import {
   engine_2,
   engine_3,
   level_1,
-  ai_prompting,
   level_2,
   level_3,
   logo,
@@ -86,7 +85,7 @@ const services = [
   {
     id: 'ai-prototyping',
     title: 'AI 프로토타이핑',
-    description: 'AI에게 레벨디자인의 핵심 정보를 제공하고 시각화 방향을 명확히 가이드하는 프롬프트를 작성하여 효율적인 결과물을 도출했습니다.',
+    description: '신속한 플레이 경험 검증을 위한 AI활용역량',
     icons: [tripo_logo, claudecode_logo, mcp_logo],
     animated: true, // 애니메이션 플래그
   },
@@ -152,7 +151,7 @@ const skillDetails = [
   {
     id: 'ai-prototyping',
     title: 'AI 프로토타이핑',
-    description: 'AI에게 레벨 디자인의 핵심 정보를 제공하고 시각화 방향을 명확히 가이드 하는 프롬프트를 작성하여 2일이라는 빠른 시간 안에 테스트 가능한 결과물을 도출했습니다.',
+    description: '초안 기획을 바탕으로 AI 문서 시각화를 통해 빠른 중간 보고 및 피드백과 실배치 진행으로 2일 만에 테스트 가능한 프로토타입을 제작하였습니다.',
     images: [
       {
         src: level_1,
@@ -160,18 +159,13 @@ const skillDetails = [
         intent: '초안 기획을 바탕으로 AI 문서 시각화를 통해 빠른 중간 보고 및 피드백과 실배치 진행으로 2일 만에 테스트 가능한 프로토타입을 제작하였습니다.'
       },
       {
-        src: ai_prompting,
-        title: '② 정보 제공 및 시각화 가이드 프롬프팅 - 5분',
-        intent: 'AI에게 레벨디자인의 핵심 정보를 제공하고 시각화 방향을 명확히 가이드하는 프롬프트를 작성하여 효율적인 결과물을 도출했습니다.'
-      },
-      {
         src: level_2,
-        title: '③ 레벨디자인 개요 문서 AI시각화 - 10분',
+        title: '② 레벨디자인 개요 문서 AI시각화 - 10분',
         intent: 'AI를 활용하여 10분 만에 문서를 시각화하고 팀원들과 빠른 피드백을 받아 프로토타입 제작 시간을 단축했습니다.'
       },
       {
         src: level_3,
-        title: '④ 레벨디자인 초안 캡처 - 1일',
+        title: '③ 레벨디자인 초안 캡처 - 1일',
         intent: '1일 만에 레벨디자인 초안을 실배치하고 PC 밸런싱을 진행하여 빠른 플레이 테스트가 가능했습니다.'
       }
     ],
