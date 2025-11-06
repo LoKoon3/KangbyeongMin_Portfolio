@@ -1,0 +1,61 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+.vercel
+
+# Large development folders (over 5GB total)
+
+# Development reference folders
+docs/
+picture/
+
+# Backup files
+*.backup
+*.backup2
+*.backup_*
+*.before_*
+
+# Script files in root
+/*.cjs
+/*.py
+
+# Root level temp files (not in src or public)
+/1_1.png
+/1_2.png
+/1_3.jpg
+/2_1.png
+/2_2.png
+/2_3.png
+/3_1.png
+/3_2.png
+/3_3.png
+/*.xlsx
+/*.pdf
+/*.pptm
+/quest.png
+/모니터.png
+/레벨디자인*.png
+
+.vercel

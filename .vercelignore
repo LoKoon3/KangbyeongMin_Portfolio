@@ -1,0 +1,26 @@
+# Large development folders (over 5GB total)
+
+# Development reference folders
+docs/
+picture/
+
+# Backup files
+*.backup
+*.backup2
+*.backup_*
+*.before_*
+
+# Script files in root
+/*.cjs
+/*.py
+
+/*.git
+/*.gitignore
+
+# Root level images and files (not in src or public)
+/*.png
+/*.jpg
+/*.jpeg
+/*.xlsx
+/*.pdf
+/*.pptm
