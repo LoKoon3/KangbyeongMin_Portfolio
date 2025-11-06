@@ -48,6 +48,7 @@ import engine_1 from './skill-images/engine_1.png';
 import engine_2 from './skill-images/engine_2.png';
 import engine_3 from './skill-images/engine_3.png';
 import level_1 from './skill-images/level_1.png';
+import ai_prompting from './skill-images/AI프롬프팅.png';
 import level_2 from './skill-images/level_2.png';
 import level_3 from './skill-images/level_3.png';
 
@@ -137,6 +138,7 @@ export {
   engine_2,
   engine_3,
   level_1,
+  ai_prompting,
   level_2,
   level_3,
   kaywon_logo,
