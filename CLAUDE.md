@@ -115,7 +115,7 @@ const services = [
   {
     id: 'engine-knowledge',
     title: '개발 엔진 지식',
-    description: '실현가능한 기획과 개발자와의 소통을 위한 개발 기초 지식',
+    description: '실현가능한 기획과 개발자와의 소통을 위한 기초 지식',
     icons: [unreal_logo],
   },
   {
@@ -334,6 +334,38 @@ const handleDownload = (fileUrl, fileName) => {
    };
    ```
 
+**Note**: The 'ai-prototyping' skill uses 4 images instead of 3. This is the current structure:
+   ```javascript
+   {
+     id: 'ai-prototyping',
+     title: 'AI 프로토타이핑',
+     description: '가공되지 않은 레벨 디자인의 핵심 정보를 AI에게 상세히 프롬프팅하여 시각화와 테스트 가능한 결과물까지 단 2일만에 도출하며 효율을 높였습니다.',
+     images: [
+       {
+         src: level_1,
+         title: '① 레벨디자인 및 시스템 기획서 준비페이지 - 1일',
+         intent: '초안 기획을 바탕으로 AI 문서 시각화를 통해 빠른 중간 보고 및 피드백과 실배치 진행으로 2일 만에 테스트 가능한 프로토타입을 제작하였습니다.'
+       },
+       {
+         src: ai_prompting,
+         title: '② 정보 제공 및 시각화 가이드 프롬프팅 - 5분',
+         intent: 'AI에게 레벨디자인의 핵심 정보를 제공하고 시각화 방향을 명확히 가이드하는 프롬프트를 작성하여 효율적인 결과물을 도출했습니다.'
+       },
+       {
+         src: level_2,
+         title: '③ 레벨디자인 개요 문서 AI시각화 - 10분',
+         intent: 'AI를 활용하여 10분 만에 문서를 시각화하고 팀원들과 빠른 피드백을 받아 프로토타입 제작 시간을 단축했습니다.'
+       },
+       {
+         src: level_3,
+         title: '④ 레벨디자인 초안 캡처 - 1일',
+         intent: '1일 만에 레벨디자인 초안을 실배치하고 PC 밸런싱을 진행하여 빠른 플레이 테스트가 가능했습니다.'
+       }
+     ],
+     portfolioFiles: [...]
+   }
+   ```
+
 ## Project Modal System (Works Section)
 
 ### Deep Linking Implementation
@@ -504,9 +536,10 @@ All canvas components follow this structure:
 - Uses `window.matchMedia` for mobile detection
 
 ### Stars.jsx (Background)
-- 5000 random points in sphere (Maath)
+- 500 random points in sphere (Maath) - reduced from 5000 for performance
 - Continuous rotation via `useFrame`
 - Negative z-index (renders behind content)
+- Adjust particle count in line 9: `random.inSphere(new Float32Array(500), { radius: 1.2 })`
 
 ## HOC Pattern - SectionWrapper
 
@@ -756,6 +789,7 @@ Final section for personal branding and aspirations:
 3. **Lazy Loading**: Suspense on 3D components
 4. **Asset Preloading**: `<Preload all />` in Canvas
 5. **Geometry Optimization**: Simple shapes (points for stars)
+6. **Particle Count**: Stars.jsx uses 500 particles (reduced from 5000) for better performance
 
 ## Key Files to Edit
 
