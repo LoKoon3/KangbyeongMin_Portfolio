@@ -29,9 +29,9 @@ import neuro_drive from './neuro_drive.jpg';
 import market_predict from './market_predict.jpg';
 import souldive_main from './souldive_main.png';
 import ashuel_title from './ashuel_title.png';
-import snapshot1 from './마지막섹션사진1.jpg';
-import snapshot2 from './마지막섹션사진2.jpg';
-import snapshot3 from './마지막섹션사진3.png';
+import snapshot1 from './snapshot1.jpg';
+import snapshot2 from './snapshot2.jpg';
+import snapshot3 from './snapshot3.png';
 import dungeon_feedback_title from './dungeon_feedback_title.jpg';
 
 import excel_logo from './logos/Excel_logo.png';
