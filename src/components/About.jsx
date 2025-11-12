@@ -24,7 +24,7 @@ const ServiceCard = ({ index, title, description, icons, animated, onClick }) =>
             scale: 1,
             speed: 450,
           }}
-          className="bg-tertiary rounded-[20px] py-10 px-8 min-h-[360px] flex justify-center items-center flex-col cursor-pointer hover:scale-105 transition-transform duration-200"
+          className="bg-tertiary rounded-[20px] py-10 px-8 min-h-[360px] flex justify-center items-center flex-col cursor-pointer hover:scale-105 transition-transform duration-200 relative group"
         >
           {/* 애니메이션 또는 정적 로고 표시 */}
           {animated ? (
@@ -54,6 +54,13 @@ const ServiceCard = ({ index, title, description, icons, animated, onClick }) =>
               {description}
             </p>
           )}
+
+          {/* 호버 시 "클릭하여 상세 보기" 오버레이 */}
+          <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 rounded-[20px] flex items-center justify-center">
+            <p className="text-white text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              클릭하여 상세 보기
+            </p>
+          </div>
         </div>
       </motion.div>
     </Tilt>

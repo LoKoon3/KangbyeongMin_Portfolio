@@ -164,6 +164,7 @@ const skillDetails = [
 - **Divider line**: Thin horizontal line separates icons from text
 - **No line wrapping**: Text uses `whitespace-nowrap` for single-line display
 - **Logo files**: Located in `src/assets/logos/`
+- **Hover overlay**: "클릭하여 상세 보기" appears on hover with black semi-transparent background (matches project cards)
 - **Click to open modal**: Each card opens a detailed modal with images and downloadable files
 
 ### Role-Based Project Data (Advanced)
