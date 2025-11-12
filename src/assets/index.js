@@ -41,14 +41,14 @@ import tripo_logo from './logos/tripo_logo.png';
 import claudecode_logo from './logos/claudecode_logo.png';
 import mcp_logo from './logos/mcp_logo.png';
 
-import souldive_doc from './skill-images/소울다이브기획서캡처.png';
-import quest_doc from './skill-images/퀘스트기획서캡처.png';
-import dungeon_doc from './skill-images/던전피드백기획서캡처.png';
+import souldive_doc from './skill-images/souldive_doc.png';
+import quest_doc from './skill-images/quest_doc.png';
+import dungeon_doc from './skill-images/dungeon_doc.png';
 import engine_1 from './skill-images/engine_1.png';
 import engine_2 from './skill-images/engine_2.png';
 import engine_3 from './skill-images/engine_3.png';
 import level_1 from './skill-images/level_1.png';
-import ai_prompting from './skill-images/AI프롬프팅.png';
+import ai_prompting from './skill-images/ai_prompting.png';
 import level_2 from './skill-images/level_2.png';
 import level_3 from './skill-images/level_3.png';
 
