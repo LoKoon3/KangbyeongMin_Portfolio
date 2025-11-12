@@ -117,15 +117,15 @@ const skillDetails = [
     portfolioFiles: [
       {
         name: '강병민_SoulDive_발표문서.pdf',
-        url: '/portfolios/강병민__SoulDive_발표문서.pdf'
+        url: '/portfolios/SoulDive_Presentation.pdf'
       },
       {
         name: '강병민_Ashuel_퀘스트 기획서.xlsx',
-        url: '/portfolios/강병민_Ashuel_퀘스트 기획서.xlsx'
+        url: '/portfolios/Ashuel_Quest_Design.xlsx'
       },
       {
         name: '강병민_던전피드백_기획발표문서.pdf',
-        url: '/portfolios/강병민_던전피드백_기획발표문서.pdf'
+        url: '/portfolios/DungeonFeedback_Presentation.pdf'
       }
     ]
   },
@@ -178,11 +178,11 @@ const skillDetails = [
     portfolioFiles: [
       {
         name: '강병민_Chap1점프맵_레벨 기획서 초안.xlsx',
-        url: '/portfolios/강병민_Chap1점프맵_레벨 기획서 초안.xlsx'
+        url: '/portfolios/Level_Design_Draft.xlsx'
       },
       {
         name: '강병민_레벨디자인 개요 문서.pdf',
-        url: '/portfolios/강병민_레벨디자인 개요 문서.pdf'
+        url: '/portfolios/Level_Design_Overview.pdf'
       }
     ]
   },

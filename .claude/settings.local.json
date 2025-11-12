@@ -62,7 +62,8 @@
       "Bash(git push:*)",
       "Bash(\"C:/Users/User/Desktop/01_현재_작업/포트폴리오_프로젝트/PortPolio_newBackup_251104_2/src/components/About.jsx\")",
       "Bash(powershell:*)",
-      "Bash(/dev/null -exec ls -lh {})"
+      "Bash(/dev/null -exec ls -lh {})",
+      "WebFetch(domain:kangbyeongminportpolio-elbgq61ae-lokoon3s-projects.vercel.app)"
     ],
     "deny": [],
     "ask": []
